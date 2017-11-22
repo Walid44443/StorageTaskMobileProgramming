@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:text="Please enter some text."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"/>
+
+    <EditText
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        tools:layout_editor_absoluteY="82dp"
+        android:id="@+id/editText"/>
+
+    <Button
+        android:text="Save To Main Storage"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:onClick="onClickSaveToMainStorage" />
+
+    <Button
+        android:text="Load from Main Storage"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLoad"
+        android:onClick="onClickLoadToMainStorage" />
+
+    <Button
+        android:text="Save To SDCARD"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSaveSD"
+        android:onClick="onClickSaveToSDCARD"
+        android:background="@color/colorAccent"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:layout_margin="5dp"
+        android:text="Load from SDCARD"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLoadSD"
+        android:onClick="onClickLoadFromSDCARD"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>
